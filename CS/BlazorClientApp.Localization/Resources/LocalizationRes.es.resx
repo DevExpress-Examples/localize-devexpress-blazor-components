@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DxBlazorStringId.Calendar_TodayButton" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="DxBlazorStringId.Calendar_ClearButton" xml:space="preserve">
+    <value>Vaciar</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_ChooseDate" xml:space="preserve">
+    <value>Selecciona una fecha</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_ApplyButton" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_CloseButton" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupPanel" xml:space="preserve">
+    <value>Arrastre una columna aquí para agrupar por dicha columna</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_UpdateButton" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_CancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_EditButton" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_DeleteButton" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_NewButton" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_ClearButton" xml:space="preserve">
+    <value>Vaciar</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_NextButton" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_PrevButton" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_PageOfLabel" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_TodayButton" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_DayViewName" xml:space="preserve">
+    <value>Día</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WorkWeekViewName" xml:space="preserve">
+    <value>Semana laboral</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekViewName" xml:space="preserve">
+    <value>Semana</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_NoSubject" xml:space="preserve">
+    <value>(Sin asunto)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_ConfirmDelete" xml:space="preserve">
+    <value>¿Desea eliminar todas las repeticiones de la cita periódica o sólo la actual?</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_DeleteButton" xml:space="preserve">
+    <value>Eliminar esta ocurrencia</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_DeleteSeriesButton" xml:space="preserve">
+    <value>Eliminar esta serie</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_ConfirmEdit" xml:space="preserve">
+    <value>¿Desea abrir todas las repeticiones de una asignación periódica o solo la actual?</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EditButton" xml:space="preserve">
+    <value>Abrir esta ocurrencia</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EditSeriesButton" xml:space="preserve">
+    <value>Abrir esta serie</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Title" xml:space="preserve">
+    <value>Evento</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_StartDate" xml:space="preserve">
+    <value>Hora de inicio</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EndDate" xml:space="preserve">
+    <value>Hora finalización</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Repeat" xml:space="preserve">
+    <value>Repetir</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Location" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Status" xml:space="preserve">
+    <value>Mostrar hora como</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Description" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatEvery" xml:space="preserve">
+    <value>Repetir cada</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Days" xml:space="preserve">
+    <value>Día(s)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Weeks" xml:space="preserve">
+    <value>semanas(s)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Months" xml:space="preserve">
+    <value>mes(es)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_OnDay" xml:space="preserve">
+    <value>Día</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_OnThe" xml:space="preserve">
+    <value>El/La</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_On" xml:space="preserve">
+    <value>Cada</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatEnd" xml:space="preserve">
+    <value>Repetir finalizar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Occurrences" xml:space="preserve">
+    <value>ocurrencias</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Label" xml:space="preserve">
+    <value>Categorizar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatAppointment" xml:space="preserve">
+    <value>Repetir {0}</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Discard" xml:space="preserve">
+    <value>Descartar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Subject" xml:space="preserve">
+    <value>Asunto</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_AllDay" xml:space="preserve">
+    <value>Todo el día</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Hours" xml:space="preserve">
+    <value>hora(s)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Free" xml:space="preserve">
+    <value>Disponible</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_WorkingElsewhere" xml:space="preserve">
+    <value>Trabajando en otro sitio</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Tentative" xml:space="preserve">
+    <value>Mit Provisional</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Busy" xml:space="preserve">
+    <value>Ocupado</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Away" xml:space="preserve">
+    <value>Ausente</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Blue" xml:space="preserve">
+    <value>Azul</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Purple" xml:space="preserve">
+    <value>Púrpura</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Indigo" xml:space="preserve">
+    <value>Índigo</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Pink" xml:space="preserve">
+    <value>Rosado</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Red" xml:space="preserve">
+    <value>Rojo</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Orange" xml:space="preserve">
+    <value>Naranja</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Yellow" xml:space="preserve">
+    <value>Amarillo</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Green" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Teal" xml:space="preserve">
+    <value>Verde azulado</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Cyan" xml:space="preserve">
+    <value>Cian</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_NoEndDate" xml:space="preserve">
+    <value>Sin fecha final</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_EndAfter" xml:space="preserve">
+    <value>Finalizar después de</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_EndBy" xml:space="preserve">
+    <value>Finalizar por</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Daily" xml:space="preserve">
+    <value>Diariamente</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Weekly" xml:space="preserve">
+    <value>Semanalmente</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Monthly" xml:space="preserve">
+    <value>Mensualmente</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Yearly" xml:space="preserve">
+    <value>Anualmente</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Never" xml:space="preserve">
+    <value>Nunca</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_First" xml:space="preserve">
+    <value>primero</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Second" xml:space="preserve">
+    <value>segundo</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Third" xml:space="preserve">
+    <value>tercero</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Fourth" xml:space="preserve">
+    <value>cuarto</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Last" xml:space="preserve">
+    <value>último</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_Day" xml:space="preserve">
+    <value>día</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_Weekend" xml:space="preserve">
+    <value>día laborable</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_WorkDay" xml:space="preserve">
+    <value>día no laborable</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_RestoreOccurrence" xml:space="preserve">
+    <value>Restaurar ocurrencias</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Close" xml:space="preserve">
+    <value>Cerrar</value>
+  </data>
+  <data name="DxBlazorStringId.PivotGrid_GrandTotal" xml:space="preserve">
+    <value>Total General</value>
+  </data>
+  <data name="DxBlazorStringId.PivotGrid_TotalFormat" xml:space="preserve">
+    <value>Total {0}</value>
+  </data>
+</root>
