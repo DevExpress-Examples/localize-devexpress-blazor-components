@@ -14,13 +14,11 @@ Our components ship with NuGet packages with predefined satellite assemblies for
 
 To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
  
- <!-- default file list -->
  *Files to look at*:
 
 - [Startup.cs](./CS/BlazorServerApp/Startup.cs)
 - [CultureController.cs](./CS/BlazorServerApp/Controllers/CultureController.cs)
 - [Index.razor](./CS/BlazorServerApp/Pages/Index.razor)
-<!-- default file list end -->
 
 #### Blazor WebAssembly
 
@@ -28,14 +26,12 @@ Currently, there are no official nor recommended approaches on how to localize c
 
 In this example, \*.resx files are converted to dictionaries using [T4 text templates][5]. The [IDxLocalizationService][2] interface returns the required string from the corresponding dictionary using the [IDxLocalizationService.GetString][4] method.
 
-<!-- default file list -->
 *Files to look at*:
   
 -	[Startup.cs](./CS/BlazorClientApp/Startup.cs)
 -	[DemoLocalizationService.cs](./CS/BlazorClientApp/Services/DemoLocalizationService.cs)
 -	[Index.razor](./CS/BlazorClientApp/Pages/Index.razor)
 -	[Resources folder](./CS/BlazorClientApp.Localization/Resources)
-<!-- default file list end -->
 
 [0]: https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.0
 [1]: https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps?view=netframework-4.8
