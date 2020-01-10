@@ -2,7 +2,8 @@
 
 This example demonstrates how to translate DevExpress Blazor components into different languages. The localization mechanism depends on your application’s [hosting model][0]: Blazor server (ASP.NET Core) or Blazor WebAssembly. The example contains code samples both for server\-side and client\-side Blazor.
  
- #### Blazor Server
+ 
+ **Blazor Server**
  
 DevExpress components in server-side Blazor applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][1].
 Our components ship with NuGet packages with predefined satellite assemblies for the following languages and cultures:
@@ -20,7 +21,8 @@ To obtain satellite assemblies for DevExpress .NET controls that correspond to o
 - [CultureController.cs](./CS/BlazorServerApp/Controllers/CultureController.cs)
 - [Index.razor](./CS/BlazorServerApp/Pages/Index.razor)
 
-#### Blazor WebAssembly
+
+**Blazor WebAssembly**
 
 Currently, there are no official nor recommended approaches on how to localize client\-side Blazor applications. DevExpress Components in client\-side Blazor applications are localized using the [IDxLocalizationService][2] interface implementation.
 
