@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29521.150
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{916BFC82-261E-4276-8FC4-6634015B8ECE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorServerApp", "BlazorServerApp", "{F16EE1F5-1071-423D-B278-6CC1439896E1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorServer", "BlazorServer", "{F16EE1F5-1071-423D-B278-6CC1439896E1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorClientApp", "BlazorClientApp\BlazorClientApp.csproj", "{D0F953A3-4AAC-4130-9DBE-04B71FF37AB6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorClientApp.Localization", "BlazorClientApp.Localization\BlazorClientApp.Localization.csproj", "{4AAAE0D3-D984-4EB2-AF11-F3DBD5DF091C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorClientApp", "BlazorClientApp", "{1A969BCA-BDDD-4946-A496-A87D8B52546C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorWebAssembly", "BlazorWebAssembly", "{1A969BCA-BDDD-4946-A496-A87D8B52546C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
