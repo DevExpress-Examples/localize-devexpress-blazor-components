@@ -1,11 +1,11 @@
 ### How to localize DevExpress Blazor components
 
-This example demonstrates how to translate DevExpress Blazor components into different languages. The localization mechanism depends on your application’s [hosting model][0]: Blazor server (ASP.NET Core) or Blazor WebAssembly. The example contains code samples both for server\-side and client\-side Blazor.
+This example demonstrates how to translate DevExpress Blazor components into different languages. The localization mechanism depends on your application’s [hosting model][0]: Blazor Server (ASP.NET Core) or Blazor WebAssembly. The example contains code samples both for Blazor Server and Blazor WebAssembly.
  
  
  **Blazor Server**
  
-DevExpress components in server-side Blazor applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][1].
+DevExpress components in Blazor Server applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][1].
 Our components ship with NuGet packages with predefined satellite assemblies for the following languages and cultures:
   
 - German (de)
@@ -24,7 +24,7 @@ To obtain satellite assemblies for DevExpress .NET controls that correspond to o
 
 **Blazor WebAssembly**
 
-Currently, there are no official nor recommended approaches on how to localize client\-side Blazor applications. DevExpress Components in client\-side Blazor applications are localized using the [IDxLocalizationService][2] interface implementation.
+Currently, there are no official nor recommended approaches on how to localize Blazor WebAssembly applications. DevExpress Components in Blazor WebAssembly applications are localized using the [IDxLocalizationService][2] interface implementation.
 
 In this example, \*.resx files are converted to dictionaries using [T4 text templates][5]. The [IDxLocalizationService][2] interface returns the required string from the corresponding dictionary using the [IDxLocalizationService.GetString][4] method.
 
