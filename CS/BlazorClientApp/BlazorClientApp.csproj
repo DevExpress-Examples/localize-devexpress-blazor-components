@@ -6,15 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="19.2.1-beta" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.2.0-preview1.20073.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.2.0-preview1.20073.1" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.2.0-preview1.20073.1" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.2.0-preview1.20073.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BlazorClientApp.Localization\BlazorClientApp.Localization.csproj" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.ru" Version="19.2.5-preview" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0-preview4.20210.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0-preview4.20210.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0-preview4.20210.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.0-preview.2.20167.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.0-preview5.20210.3" />
   </ItemGroup>
 
   <ItemGroup>

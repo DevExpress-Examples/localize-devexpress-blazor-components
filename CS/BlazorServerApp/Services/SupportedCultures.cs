@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 namespace BlazorServerApp.Services {
     public class SupportedCultures {
         public static CultureInfo[] Cultures { get; } = new CultureInfo[] {
-            new CultureInfo("de"),
-            new CultureInfo("en"),
-            new CultureInfo("es"),
-            new CultureInfo("ja"),
-            new CultureInfo("ru"),
+            new CultureInfo("de-DE"),
+            new CultureInfo("en-US"),
+            new CultureInfo("ru-RU"),
         };
     }
 }
