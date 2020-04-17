@@ -3,10 +3,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="19.2.1-beta" />
-    <PackageReference Include="DevExpress.Blazor.de" Version="19.2.1-beta" />
-    <PackageReference Include="DevExpress.Blazor.es" Version="19.2.1-beta" />
-    <PackageReference Include="DevExpress.Blazor.ja" Version="19.2.1-beta" />
-    <PackageReference Include="DevExpress.Blazor.ru" Version="19.2.1-beta" />
+    <PackageReference Include="DevExpress.Blazor" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="19.2.5-preview" />
+    <PackageReference Include="DevExpress.Blazor.ru" Version="19.2.5-preview" />
   </ItemGroup>
 </Project>

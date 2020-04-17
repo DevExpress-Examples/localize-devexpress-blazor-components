@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Globalization;
+using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Blazor.Hosting;
+using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using DevExpress.Blazor.Localization;
+using Microsoft.JSInterop;
 using BlazorClientApp.Services;
 
 namespace BlazorClientApp {
@@ -11,10 +13,18 @@ namespace BlazorClientApp {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.Services.AddDevExpressBlazor();
             builder.Services.AddScoped<WeatherForecastService>();
-            builder.Services.AddSingleton(typeof(IDxLocalizationService), typeof(DemoLocalizationService));
+            builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
             builder.RootComponents.Add<App>("app");
-
-            await builder.Build().RunAsync();
+            var host = builder.Build();
+            var jsInterop = host.Services.GetRequiredService<IJSRuntime>();
+            var result = await jsInterop.InvokeAsync<string>("blazorCulture.get");
+            if(result != null) {
+                var culture = new CultureInfo(result);
+                CultureInfo.DefaultThreadCurrentCulture = culture;
+                CultureInfo.DefaultThreadCurrentUICulture = culture;
+            }
+            await host.RunAsync();
         }
     }
 }
