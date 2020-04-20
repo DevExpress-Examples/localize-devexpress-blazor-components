@@ -1,6 +1,6 @@
 ### How to localize DevExpress Blazor components
  
-DevExpress components in Blazor Server applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][0].
+DevExpress components in Blazor applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][0].
 Our components ship with NuGet packages with predefined satellite assemblies for the following languages and cultures:
   
 - German (de)
