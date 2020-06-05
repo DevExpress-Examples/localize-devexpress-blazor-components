@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Blazor" Version="20.1.4" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="20.1.4" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="20.1.4" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="20.1.4" />
+    <PackageReference Include="DevExpress.Blazor.ru" Version="20.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0-preview4.20210.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0-preview4.20210.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0-preview4.20210.8" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.0-preview.2.20167.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.0-preview5.20210.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BlazorLinkerDescriptor Include="Linker.xml" />
+  </ItemGroup>
+</Project>
