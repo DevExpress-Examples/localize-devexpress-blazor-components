@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.JSInterop;
 using BlazorClientApp.Services;
+using DevExpress.Blazor.Localization;
 
 namespace BlazorClientApp {
     public class Program {
@@ -15,6 +16,7 @@ namespace BlazorClientApp {
             builder.Services.AddScoped<WeatherForecastService>();
             builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+            builder.Services.AddSingleton(typeof(IDxLocalizationService), typeof(DemoLocalizationService));
             builder.RootComponents.Add<App>("app");
             var host = builder.Build();
             var jsInterop = host.Services.GetRequiredService<IJSRuntime>();
