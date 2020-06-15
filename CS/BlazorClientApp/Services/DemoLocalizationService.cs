@@ -10,15 +10,19 @@ namespace BlazorClientApp.Services
 {
     public class DemoLocalizationService : DxLocalizationService, IDxLocalizationService
     {
-        readonly Dictionary<string, ResourceManager> resources = new Dictionary<string, ResourceManager>();
+        ResourceManager _resourceManager;
+        ResourceManager ResourceManager {
+            get {
+                if(_resourceManager == null)
+                    _resourceManager = new ResourceManager("BlazorClientApp.Resources.LocalizationRes", typeof(DemoLocalizationService).Assembly);
+                return _resourceManager;
+            }
+        }
         string IDxLocalizationService.GetString(string key) {
             var culture = CultureInfo.CurrentUICulture.Name;
             switch(culture) {
                 case "it-IT":
-                    if(!resources.TryGetValue(culture, out var resourceManager)) {
-                        resources[culture] = resourceManager = new ResourceManager("BlazorClientApp.Resources.LocalizationRes", typeof(DemoLocalizationService).Assembly);
-                    }
-                    return resourceManager.GetString(key);
+                    return ResourceManager.GetString(key);
                 default:
                     return base.GetString(key);
             }            
