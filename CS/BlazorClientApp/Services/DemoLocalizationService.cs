@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlazorClientApp.Services
 {
-    public class DemoLocalizationService : DxLocalizationService, IDxLocalizationService
-    {
+    public class DemoLocalizationService : DxLocalizationService, IDxLocalizationService {
         ResourceManager _resourceManager;
         ResourceManager ResourceManager {
             get {
@@ -20,12 +19,13 @@ namespace BlazorClientApp.Services
         }
         string IDxLocalizationService.GetString(string key) {
             var culture = CultureInfo.CurrentUICulture.Name;
+            string value = null;
             switch(culture) {
                 case "it-IT":
-                    return ResourceManager.GetString(key);
-                default:
-                    return base.GetString(key);
-            }            
+                    value = ResourceManager.GetString(key);
+                    break;
+            }
+            return value ?? base.GetString(key);
         }
     }
 }
