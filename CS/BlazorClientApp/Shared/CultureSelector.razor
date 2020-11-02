@@ -4,20 +4,13 @@
 
 <strong>Culture:</strong>
 <div class="d-inline-block" style="margin-bottom:2rem">
-    <DxComboBox Data="@supportedCultures"
+    <DxComboBox Data="@SupportedCultures.Cultures"
                 TextFieldName="NativeName"
-                @bind-SelectedItem="@Culture">
+                @bind-Value="@Culture">
     </DxComboBox>
 </div>
 
 @code { 
-    CultureInfo[] supportedCultures = new[] {
-        new CultureInfo("de-DE"),
-        new CultureInfo("en-US"),
-        new CultureInfo("it-IT"),
-        new CultureInfo("ru-RU"),
-    };
-
     CultureInfo Culture {
         get => CultureInfo.CurrentCulture;
         set {
