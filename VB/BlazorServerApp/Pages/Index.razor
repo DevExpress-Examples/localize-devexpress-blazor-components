@@ -1,0 +1,36 @@
+﻿@page "/"
+
+@using DevExpress.Blazor
+@using Microsoft.Extensions.Localization;
+
+@inject WeatherForecastService ForecastService
+@inject IStringLocalizer<Index> L
+
+<CultureSelector />
+
+<DxDataGrid DataAsync="@ForecastService.GetForecastAsync"
+            PageSize="5"
+            ShowFilterRow="false"
+            ShowGroupPanel="true"
+            RowRemoving="@((dataItem) => OnRowRemoving(dataItem))"
+            RowUpdating="@((updatingDataItem, newValues) => OnRowUpdating(updatingDataItem, newValues))"
+            RowInserting="@((newValues) => OnRowInserting(newValues))">
+    <DxDataGridCommandColumn Width="150px"></DxDataGridCommandColumn>
+    <DxDataGridDateEditColumn Field="@nameof(WeatherForecast.Date)" Caption=@L["Date"] DisplayFormat="D" EditorFormat="D"></DxDataGridDateEditColumn>
+    <DxDataGridColumn Field="@nameof(WeatherForecast.Summary)" Caption=@L["Summary"] Width="150px"></DxDataGridColumn>
+    <DxDataGridSpinEditColumn Field="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L["Temperature"]} (\x2109)") TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridSpinEditColumn>
+    <DxDataGridComboBoxColumn Field="@nameof(WeatherForecast.WeatherType)" Caption=@L["Cloudiness"] DataAsync="@ForecastService.GetCloudinessAsync" TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridComboBoxColumn>
+    <DxDataGridCheckBoxColumn Field="@nameof(WeatherForecast.Precipitates)" Caption=@L["Precipitates"] Width="100px"></DxDataGridCheckBoxColumn>
+</DxDataGrid>
+
+@code {
+    async void OnRowRemoving(WeatherForecast dataItem) {
+        await ForecastService.Remove(dataItem);
+    }
+    async void OnRowUpdating(WeatherForecast dataItem, Dictionary<string, object> newValue) {
+        await ForecastService.Update(dataItem, newValue);
+    }
+    async void OnRowInserting(Dictionary<string, object> newValue) {
+        await ForecastService.Insert(newValue);
+    }
+}
