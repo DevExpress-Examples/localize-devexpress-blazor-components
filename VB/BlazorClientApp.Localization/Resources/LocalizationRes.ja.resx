@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DxBlazorStringId.Calendar_TodayButton" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="DxBlazorStringId.Calendar_ClearButton" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_ChooseDate" xml:space="preserve">
+    <value>日付を選択する</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_ApplyButton" xml:space="preserve">
+    <value>適用する</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_CloseButton" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupPanel" xml:space="preserve">
+    <value>列ヘッダーをここにドラッグしてその列でグループ化</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_UpdateButton" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_CancelButton" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_EditButton" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_DeleteButton" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_NewButton" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_ClearButton" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_NextButton" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_PrevButton" xml:space="preserve">
+    <value>前へ</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_PageOfLabel" xml:space="preserve">
+    <value>の</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_TodayButton" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_DayViewName" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WorkWeekViewName" xml:space="preserve">
+    <value>稼働日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekViewName" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_NoSubject" xml:space="preserve">
+    <value>(件名なし)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_ConfirmDelete" xml:space="preserve">
+    <value>この予定のみを削除しますか、それともシリーズ全体を削除しますか？</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_DeleteButton" xml:space="preserve">
+    <value>イベントを削除</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_DeleteSeriesButton" xml:space="preserve">
+    <value>シリーズを削除</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_ConfirmEdit" xml:space="preserve">
+    <value>この予定のみを編集しますか、それともシリーズ全体を編集しますか？</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EditButton" xml:space="preserve">
+    <value>予定を編集</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EditSeriesButton" xml:space="preserve">
+    <value>シリーズを編集</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Title" xml:space="preserve">
+    <value>任命</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_StartDate" xml:space="preserve">
+    <value>開始時刻</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_EndDate" xml:space="preserve">
+    <value>終了時刻</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Repeat" xml:space="preserve">
+    <value>繰り返す</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Location" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Status" xml:space="preserve">
+    <value>時刻の表示方法</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Description" xml:space="preserve">
+    <value>説明</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatEvery" xml:space="preserve">
+    <value>繰り返す</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Days" xml:space="preserve">
+    <value>日間</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Weeks" xml:space="preserve">
+    <value>週間</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Tuesday" xml:space="preserve">
+    <value>火</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_TuesdayTooltip" xml:space="preserve">
+    <value>火曜日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Wednesday" xml:space="preserve">
+    <value>水</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_WednesdayTooltip" xml:space="preserve">
+    <value>水曜日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Months" xml:space="preserve">
+    <value>か月間</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_OnDay" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_OnThe" xml:space="preserve">
+    <value>各</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_On" xml:space="preserve">
+    <value>各</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatEnd" xml:space="preserve">
+    <value>再発終了</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Occurrences" xml:space="preserve">
+    <value>回</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Label" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatAppointment" xml:space="preserve">
+    <value>{0} 繰り返す</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Discard" xml:space="preserve">
+    <value>破棄</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Subject" xml:space="preserve">
+    <value>件名</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_AllDay" xml:space="preserve">
+    <value>終日イベント</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Hours" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Free" xml:space="preserve">
+    <value>空き時間</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_WorkingElsewhere" xml:space="preserve">
+    <value>他の場所で勤務中</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Tentative" xml:space="preserve">
+    <value>仮の予定</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Busy" xml:space="preserve">
+    <value>予定あり</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Status_Away" xml:space="preserve">
+    <value>退席中</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Light" xml:space="preserve">
+    <value>光</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Blue" xml:space="preserve">
+    <value>青い</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Purple" xml:space="preserve">
+    <value>紫の</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Indigo" xml:space="preserve">
+    <value>インジゴ</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Pink" xml:space="preserve">
+    <value>ピンク</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Red" xml:space="preserve">
+    <value>赤</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Orange" xml:space="preserve">
+    <value>オレンジ</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Yellow" xml:space="preserve">
+    <value>黄</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Green" xml:space="preserve">
+    <value>緑</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Teal" xml:space="preserve">
+    <value>ティール</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Cyan" xml:space="preserve">
+    <value>シアン</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_NoEndDate" xml:space="preserve">
+    <value>終了日未定</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_EndAfter" xml:space="preserve">
+    <value>終了日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceRange_EndBy" xml:space="preserve">
+    <value>終了期限</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Daily" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Weekly" xml:space="preserve">
+    <value>毎週&lt;</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Monthly" xml:space="preserve">
+    <value>毎月</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Yearly" xml:space="preserve">
+    <value>毎年</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_RecurrenceType_Never" xml:space="preserve">
+    <value>繰り返さない</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_First" xml:space="preserve">
+    <value>第1</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Second" xml:space="preserve">
+    <value>第2</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Third" xml:space="preserve">
+    <value>第3</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Fourth" xml:space="preserve">
+    <value>第4</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekOfMonth_Last" xml:space="preserve">
+    <value>最後</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_Weekend" xml:space="preserve">
+    <value>週末</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_WorkDay" xml:space="preserve">
+    <value>就業日</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_RestoreOccurrence" xml:space="preserve">
+    <value>オカレンスを復元する</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Edit" xml:space="preserve">
+    <value>編集する</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ToolTip_Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="DxBlazorStringId.PivotGrid_GrandTotal" xml:space="preserve">
+    <value>総計</value>
+  </data>
+  <data name="DxBlazorStringId.PivotGrid_TotalFormat" xml:space="preserve">
+    <value>{0} 合計</value>
+  </data>
+</root>

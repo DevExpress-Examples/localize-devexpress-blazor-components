@@ -1,0 +1,41 @@
+﻿@page "/"
+
+@using DevExpress.Blazor
+@using DevExpress.Blazor.Localization
+@using System.Globalization
+
+@inject WeatherForecastService ForecastService
+@inject IDxLocalizationService L
+
+<h5>Current culture is: @CultureInfo.CurrentCulture.DisplayName</h5>
+
+<DxDataGrid DataAsync="@ForecastService.GetForecastAsync"
+            PageSize="5"
+            ShowFilterRow="false"
+            ShowGroupPanel="true"
+            RowRemoving="@((dataItem) => OnRowRemoving(dataItem))"
+            RowUpdating="@((updatingDataItem, newValues) => OnRowUpdating(updatingDataItem, newValues))"
+            RowInserting="@((newValues) => OnRowInserting(newValues))">
+    <DxDataGridCommandColumn Width="150px"></DxDataGridCommandColumn>
+    <DxDataGridDateEditColumn Field="@nameof(WeatherForecast.Date)" Caption=@L.GetString("Date") DisplayFormatString="D" EditFormatString="D"></DxDataGridDateEditColumn>
+    <DxDataGridColumn Field="@nameof(WeatherForecast.Summary)" Caption=@L.GetString("Summary") Width="150px"></DxDataGridColumn>
+    <DxDataGridSpinEditColumn Field="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L.GetString("Temperature")} (\x2109)") TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridSpinEditColumn>
+    <DxDataGridComboBoxColumn Field="@nameof(WeatherForecast.WeatherType)" Caption=@L.GetString("Cloudiness") DataAsync="@ForecastService.GetCloudinessAsync" TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridComboBoxColumn>
+    <DxDataGridCheckBoxColumn Field="@nameof(WeatherForecast.Precipitates)" Caption=@L.GetString("Precipitates") Width="100px"></DxDataGridCheckBoxColumn>
+</DxDataGrid>
+
+@code {
+    protected override void OnInitialized() {
+        base.OnInitialized();
+        CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("de");
+    }
+    async void OnRowRemoving(WeatherForecast dataItem) {
+        await ForecastService.Remove(dataItem);
+    }
+    async void OnRowUpdating(WeatherForecast dataItem, Dictionary<string, object> newValue) {
+        await ForecastService.Update(dataItem, newValue);
+    }
+    async void OnRowInserting(Dictionary<string, object> newValue) {
+        await ForecastService.Insert(newValue);
+    }
+}
