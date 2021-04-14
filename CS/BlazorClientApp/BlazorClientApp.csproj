@@ -1,19 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <RazorLangVersion>3.0</RazorLangVersion>
+    <TargetFramework>net5.0</TargetFramework>
+    <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="20.2.6" />
-    <PackageReference Include="DevExpress.Blazor.de" Version="20.2.3" />
-    <PackageReference Include="DevExpress.Blazor.es" Version="20.2.3" />
-    <PackageReference Include="DevExpress.Blazor.ja" Version="20.2.3" />
-    <PackageReference Include="DevExpress.Blazor.ru" Version="20.2.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Extensions.Localization" Version="3.1.8" />
-    <PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
+    <PackageReference Include="DevExpress.Blazor" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor.ru" Version="21.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.5" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="5.0.5" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <BlazorLinkerDescriptor Include="Linker.xml" />

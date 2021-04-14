@@ -14,10 +14,10 @@ namespace BlazorClientApp {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.Services.AddDevExpressBlazor();
             builder.Services.AddScoped<WeatherForecastService>();
-            builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
             builder.Services.AddSingleton(typeof(IDxLocalizationService), typeof(DemoLocalizationService));
-            builder.RootComponents.Add<App>("app");
+            builder.RootComponents.Add<App>("#app");
             var host = builder.Build();
             var jsInterop = host.Services.GetRequiredService<IJSRuntime>();
             var result = await jsInterop.InvokeAsync<string>("blazorCulture.get");
