@@ -5,10 +5,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.Blazor" Version="20.2.6" />
-    <PackageReference Include="DevExpress.Blazor.de" Version="21.1.2" />
-    <PackageReference Include="DevExpress.Blazor.es" Version="21.1.2" />
-    <PackageReference Include="DevExpress.Blazor.ja" Version="21.1.2" />
-    <PackageReference Include="DevExpress.Blazor.ru" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="20.2.6" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="20.2.6" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="20.2.6" />
+    <PackageReference Include="DevExpress.Blazor.ru" Version="20.2.6" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.5" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
