@@ -1,10 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="21.1.2" />
+    <PackageReference Include="DevExpress.Blazor" Version="20.2.6" />
     <PackageReference Include="DevExpress.Blazor.de" Version="21.1.2" />
     <PackageReference Include="DevExpress.Blazor.es" Version="21.1.2" />
     <PackageReference Include="DevExpress.Blazor.ja" Version="21.1.2" />
