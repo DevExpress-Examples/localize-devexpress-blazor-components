@@ -4,7 +4,7 @@
     <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="20.2.6" />
+    <PackageReference Include="DevExpress.Blazor" Version="20.2.5" />
     <PackageReference Include="DevExpress.Blazor.de" Version="20.2.3" />
     <PackageReference Include="DevExpress.Blazor.es" Version="20.2.3" />
     <PackageReference Include="DevExpress.Blazor.ja" Version="20.2.3" />
