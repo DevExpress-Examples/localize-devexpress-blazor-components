@@ -3,19 +3,24 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T850867)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-### How to localize DevExpress Blazor components
+
+# DevExpress Blazor - How to localize components
  
-DevExpress components in Blazor applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies][0].
+DevExpress components in Blazor applications use the standard localization mechanism from the .NET framework - [Satellite Resource Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps?view=netframework-4.8).
+
+![Blazor Components Localization](images/blazor-localization-overview.png)
+
 Our components ship with NuGet packages with predefined satellite assemblies for the following languages and cultures:
   
 - German (de)
 - Spanish (es)
--	Japanese (ja)
--	Russian (ru)
+- Japanese (ja)
+- Russian (ru)
 
 To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
- 
- *Files to look at*:
+
+<!-- default file list -->
+## Files to Look At
 
 Blazor Server
 - [Startup.cs](./CS/BlazorServerApp/Startup.cs)
@@ -25,5 +30,12 @@ Blazor Server
 Blazor WebAssembly
 -	[Program.cs](./CS/BlazorClientApp/Program.cs)
 -	[Index.razor](./CS/BlazorClientApp/Pages/Index.razor)
+<!-- default file list end -->
 
-[0]: https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps?view=netframework-4.8
+## Documentation
+
+[Localization](https://docs.devexpress.com/Blazor/401564/common-concepts/localization)
+
+## More Examples
+
+[Theme Switcher](https://github.com/DevExpress-Examples/blazor-theme-switcher)
