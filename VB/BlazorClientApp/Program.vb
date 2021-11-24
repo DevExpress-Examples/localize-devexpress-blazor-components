@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports System.Globalization
 Imports System.Net.Http
 Imports System.Threading.Tasks
@@ -8,23 +8,26 @@ Imports Microsoft.JSInterop
 Imports BlazorClientApp.Services
 
 Namespace BlazorClientApp
-	Public Class Program
-		Public Shared Async Function Main(ByVal args() As String) As Task
-			Dim builder = WebAssemblyHostBuilder.CreateDefault(args)
-			builder.Services.AddDevExpressBlazor()
-			builder.Services.AddScoped(Of WeatherForecastService)()
-			builder.Services.AddSingleton(New HttpClient With {.BaseAddress = New Uri(builder.HostEnvironment.BaseAddress)})
-			builder.Services.AddLocalization(Sub(options) options.ResourcesPath = "Resources")
-			builder.RootComponents.Add(Of App)("app")
-			Dim host = builder.Build()
-			Dim jsInterop = host.Services.GetRequiredService(Of IJSRuntime)()
-			Dim result = Await jsInterop.InvokeAsync(Of String)("blazorCulture.get")
-			If result IsNot Nothing Then
-				Dim culture = New CultureInfo(result)
-				CultureInfo.DefaultThreadCurrentCulture = culture
-				CultureInfo.DefaultThreadCurrentUICulture = culture
-			End If
-			Await host.RunAsync()
-		End Function
-	End Class
+
+    Public Class Program
+
+        Public Shared Async Function Main(ByVal args As String()) As Task
+            Dim builder = WebAssemblyHostBuilder.CreateDefault(args)
+            builder.Services.AddDevExpressBlazor()
+            builder.Services.AddScoped(Of WeatherForecastService)()
+            builder.Services.AddSingleton(New HttpClient With {.BaseAddress = New Uri(builder.HostEnvironment.BaseAddress)})
+            builder.Services.AddLocalization(Sub(options) options.ResourcesPath = "Resources")
+            builder.RootComponents.Add(Of App)("app")
+            Dim host = builder.Build()
+            Dim jsInterop = host.Services.GetRequiredService(Of IJSRuntime)()
+            Dim result = Await jsInterop.InvokeAsync(Of String)("blazorCulture.get")
+            If Not Equals(result, Nothing) Then
+                Dim culture = New CultureInfo(result)
+                CultureInfo.DefaultThreadCurrentCulture = culture
+                CultureInfo.DefaultThreadCurrentUICulture = culture
+            End If
+
+            Await host.RunAsync()
+        End Function
+    End Class
 End Namespace
