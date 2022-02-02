@@ -103,7 +103,7 @@ namespace BlazorClientApp.Services {
         WeatherForecast[] InsertInternal(WeatherForecast newValue) {
             var dataItem = new WeatherForecast();
             Update(dataItem, newValue);
-            Forecasts.Insert(0, newValue);
+            Forecasts.Insert(0, dataItem);
             return Forecasts.ToArray();
         }
         public Task<WeatherForecast[]> Insert(WeatherForecast newValue) {
