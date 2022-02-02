@@ -5,8 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlazorClientApp.Services
-{
+namespace BlazorClientApp.Services {
     public class WeatherForecastService {
         Tuple<int, int>[] temperatureStatistic = new Tuple<int, int>[] {
             Tuple.Create(-15, -1),
@@ -44,7 +43,7 @@ namespace BlazorClientApp.Services
 
             return Enumerable.Range(1, 15).Select(index => {
                 var day = startDate.AddDays(index);
-                if(day.Month - startDate.AddDays(index - 1).Month != 0 || temperatureC == null) {
+                if (day.Month - startDate.AddDays(index - 1).Month != 0 || temperatureC == null) {
                     min = temperatureStatistic[day.Month - 1].Item1;
                     max = temperatureStatistic[day.Month - 1].Item2;
                     temperatureC = rng.Next(min, max);
@@ -101,13 +100,13 @@ namespace BlazorClientApp.Services
         public Task<IEnumerable<string>> GetCloudinessAsync(CancellationToken ct = default) {
             return Task.FromResult(WeatherTypes.AsEnumerable());
         }
-        WeatherForecast[] InsertInternal(IDictionary<string, object> newValue) {
+        WeatherForecast[] InsertInternal(WeatherForecast newValue) {
             var dataItem = new WeatherForecast();
             Update(dataItem, newValue);
-            Forecasts.Insert(0, dataItem);
+            Forecasts.Insert(0, newValue);
             return Forecasts.ToArray();
         }
-        public Task<WeatherForecast[]> Insert(IDictionary<string, object> newValue) {
+        public Task<WeatherForecast[]> Insert(WeatherForecast newValue) {
             return Task.FromResult(InsertInternal(newValue));
         }
         WeatherForecast[] RemoveInternal(WeatherForecast dataItem) {
@@ -117,29 +116,15 @@ namespace BlazorClientApp.Services
         public Task<WeatherForecast[]> Remove(WeatherForecast dataItem) {
             return Task.FromResult(RemoveInternal(dataItem));
         }
-        WeatherForecast[] UpdateInternal(WeatherForecast dataItem, IDictionary<string, object> newValue) {
-            foreach(var field in newValue.Keys) {
-                switch(field) {
-                    case nameof(dataItem.Date):
-                        dataItem.Date = (DateTime)newValue[field];
-                        break;
-                    case nameof(dataItem.Summary):
-                        dataItem.Summary = (string)newValue[field];
-                        break;
-                    case nameof(dataItem.TemperatureC):
-                        dataItem.TemperatureC = (int)newValue[field];
-                        break;
-                    case nameof(dataItem.Precipitates):
-                        dataItem.Precipitates = (bool)newValue[field];
-                        break;
-                    case nameof(dataItem.WeatherType):
-                        dataItem.WeatherType = (string)newValue[field];
-                        break;
-                }
-            }
+        WeatherForecast[] UpdateInternal(WeatherForecast dataItem, WeatherForecast newValue) {
+            dataItem.Date = newValue.Date;
+            dataItem.Summary = newValue.Summary;
+            dataItem.TemperatureC = newValue.TemperatureC;
+            dataItem.WeatherType = newValue.WeatherType;
+            dataItem.Precipitates = newValue.Precipitates;
             return Forecasts.ToArray();
         }
-        public Task<WeatherForecast[]> Update(WeatherForecast dataItem, IDictionary<string, object> newValue) {
+        public Task<WeatherForecast[]> Update(WeatherForecast dataItem, WeatherForecast newValue) {
             return Task.FromResult(UpdateInternal(dataItem, newValue));
         }
     }
