@@ -8,29 +8,66 @@
 
 <CultureSelector />
 
-<DxDataGrid DataAsync="@ForecastService.GetForecastAsync"
-            PageSize="5"
-            ShowFilterRow="false"
-            ShowGroupPanel="true"
-            RowRemoving="@((dataItem) => OnRowRemoving(dataItem))"
-            RowUpdating="@((updatingDataItem, newValues) => OnRowUpdating(updatingDataItem, newValues))"
-            RowInserting="@((newValues) => OnRowInserting(newValues))">
-    <DxDataGridCommandColumn Width="150px"></DxDataGridCommandColumn>
-    <DxDataGridDateEditColumn Field="@nameof(WeatherForecast.Date)" Caption=@L["Date"] DisplayFormat="D" EditorFormat="D"></DxDataGridDateEditColumn>
-    <DxDataGridColumn Field="@nameof(WeatherForecast.Summary)" Caption=@L["Summary"] Width="150px"></DxDataGridColumn>
-    <DxDataGridSpinEditColumn Field="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L["Temperature"]} (\x2109)") TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridSpinEditColumn>
-    <DxDataGridComboBoxColumn Field="@nameof(WeatherForecast.WeatherType)" Caption=@L["Cloudiness"] DataAsync="@ForecastService.GetCloudinessAsync" TextAlignment="@DataGridTextAlign.Left" Width="150px"></DxDataGridComboBoxColumn>
-    <DxDataGridCheckBoxColumn Field="@nameof(WeatherForecast.Precipitates)" Caption=@L["Precipitates"] Width="100px"></DxDataGridCheckBoxColumn>
-</DxDataGrid>
+<DxGrid Data=@Data
+        PageSize="5"
+        ShowFilterRow="false"
+        ShowGroupPanel="true"
+        DataItemDeleting="OnDataItemDeleting"
+        EditModelSaving="OnEditModelSaving">
+    <Columns>
+        <DxGridCommandColumn Width="155px"></DxGridCommandColumn>
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Date)" Caption=@L["Date"] DisplayFormat="D"></DxGridDataColumn>
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Summary)" Caption=@L["Summary"] Width="150px"></DxGridDataColumn>
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L["Temperature"]} (\x2109)") TextAlignment="GridTextAlignment.Left" Width="150px"></DxGridDataColumn>
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.WeatherType)" Caption=@L["Cloudiness"] TextAlignment="GridTextAlignment.Left" Width="150px"></DxGridDataColumn>
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Precipitates)" Caption=@L["Precipitates"] Width="120px">
+            <CellDisplayTemplate>
+                <DxCheckBox CssClass="d-inline-block" Enabled="false" Checked="(bool)context.Value" />
+            </CellDisplayTemplate>
+        </DxGridDataColumn>
+    </Columns>
+    <EditFormTemplate Context="EditFormContext">
+        @{
+            var forecast = (WeatherForecast)EditFormContext.EditModel;
+        }
+        <DxFormLayout>
+            <DxFormLayoutItem Caption=@L["Date"] ColSpanMd="6">
+                <DxDateEdit @bind-Date=@forecast.Date></DxDateEdit>
+            </DxFormLayoutItem>
+            <DxFormLayoutItem Caption=@L["Summary"] ColSpanMd="6">
+                <DxTextBox @bind-Text=@forecast.Summary></DxTextBox>
+            </DxFormLayoutItem>
+            <DxFormLayoutItem Caption=@($"{L["Temperature"]} (\x2109)") ColSpanMd="6">
+                <DxSpinEdit @bind-Value=@forecast.TemperatureC></DxSpinEdit>
+            </DxFormLayoutItem>
+            <DxFormLayoutItem Caption=@L["Cloudiness"] ColSpanMd="6">
+                <DxComboBox Data=@WeatherTypes @bind-Value=@forecast.WeatherType></DxComboBox>
+            </DxFormLayoutItem>
+            <DxFormLayoutItem Caption=@L["Precipitates"] ColSpanMd="6">
+                <DxCheckBox @bind-Checked=@forecast.Precipitates></DxCheckBox>
+            </DxFormLayoutItem>
+        </DxFormLayout>
+    </EditFormTemplate>
+</DxGrid>
 
 @code {
-    async void OnRowRemoving(WeatherForecast dataItem) {
-        await ForecastService.Remove(dataItem);
+    object Data;
+    static string[] WeatherTypes = new[] {
+            "Sunny", "Partly cloudy", "Cloudy", "Storm"
+    };
+
+    protected override async Task OnInitializedAsync() {
+        Data = await ForecastService.GetForecastAsync();
     }
-    async void OnRowUpdating(WeatherForecast dataItem, Dictionary<string, object> newValue) {
-        await ForecastService.Update(dataItem, newValue);
+    async Task OnDataItemDeleting(GridDataItemDeletingEventArgs e) {
+        await ForecastService.Remove((WeatherForecast)e.DataItem);
     }
-    async void OnRowInserting(Dictionary<string, object> newValue) {
-        await ForecastService.Insert(newValue);
+    async Task OnEditModelSaving(GridEditModelSavingEventArgs e) {
+        if (e.IsNew) {
+            await ForecastService.Insert((WeatherForecast)e.EditModel);
+        }
+        else {
+            await ForecastService.Update((WeatherForecast)e.DataItem, (WeatherForecast)e.EditModel);
+        }
     }
 }
