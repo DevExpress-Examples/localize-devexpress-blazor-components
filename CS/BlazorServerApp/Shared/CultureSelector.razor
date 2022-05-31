@@ -15,14 +15,17 @@
     CultureInfo Culture {
         get => CultureInfo.CurrentCulture;
         set {
+            if (CultureInfo.CurrentCulture != value) {
+                var uri = new Uri(Nav.Uri)
+                    .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
+                var cultureEscaped = Uri.EscapeDataString(value.Name);
+                var uriEscaped = Uri.EscapeDataString(uri);
 
-            var cultureName = value.Name;
-            var uri = new Uri(Nav.Uri)
-                .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
-            var query = $"?culture={Uri.EscapeDataString(cultureName)}&" +
-                $"redirectUri={Uri.EscapeDataString(uri)}";
-
-            Nav.NavigateTo("/Culture/SetCulture" + query, forceLoad: true);
+                Nav.NavigateTo(
+                    $"Culture/Set?culture={cultureEscaped}&redirectUri={uriEscaped}",
+                    forceLoad: true
+                );
+            }
         }
     }
 }

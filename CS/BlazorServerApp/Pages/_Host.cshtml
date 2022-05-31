@@ -1,8 +1,16 @@
 ﻿@page "/"
 @namespace BlazorServerApp.Pages
+@using System.Globalization
+@using Microsoft.AspNetCore.Localization
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
+    this.HttpContext.Response.Cookies.Append(
+        CookieRequestCultureProvider.DefaultCookieName,
+        CookieRequestCultureProvider.MakeCookieValue(
+            new RequestCulture(
+                CultureInfo.CurrentCulture,
+                CultureInfo.CurrentUICulture)));
 }
 
 <!DOCTYPE html>
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
 
-    <link href="_content/DevExpress.Blazor/dx-blazor.css" rel="stylesheet" />
+    <link href="_content/DevExpress.Blazor.Themes/blazing-berry.bs5.css" rel="stylesheet" />
 </head>
 <body>
     <app>
