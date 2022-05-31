@@ -1,5 +1,5 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/233067893/21.2.5%2B)
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/233067893/22.1.2%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T850867)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
@@ -15,6 +15,7 @@ Our components ship with NuGet packages with predefined satellite assemblies for
 - German (de)
 - Spanish (es)
 - Japanese (ja)
+- Russian (ru)
 
 To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
 
@@ -22,13 +23,12 @@ To obtain satellite assemblies for DevExpress .NET controls that correspond to o
 ## Files to Look At
 
 Blazor Server
-- [Program.cs](./CS/BlazorServerApp/Program.cs)
+- [Startup.cs](./CS/BlazorServerApp/Startup.cs)
 - [CultureController.cs](./CS/BlazorServerApp/Controllers/CultureController.cs)
 - [Index.razor](./CS/BlazorServerApp/Pages/Index.razor)
 
 Blazor WebAssembly
 -	[Program.cs](./CS/BlazorClientApp/Program.cs)
--	[DemoLocalizationService.cs](./CS/BlazorClientApp/Services/DemoLocalizationService.cs)
 -	[Index.razor](./CS/BlazorClientApp/Pages/Index.razor)
 <!-- default file list end -->
 
