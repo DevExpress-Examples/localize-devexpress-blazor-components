@@ -15,7 +15,6 @@ Our components ship with NuGet packages with predefined satellite assemblies for
 - German (de)
 - Spanish (es)
 - Japanese (ja)
-- Russian (ru)
 
 To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
 
@@ -23,7 +22,7 @@ To obtain satellite assemblies for DevExpress .NET controls that correspond to o
 ## Files to Look At
 
 Blazor Server
-- [Startup.cs](./CS/BlazorServerApp/Startup.cs)
+- [Program.cs](./CS/BlazorServerApp/Program.cs)
 - [CultureController.cs](./CS/BlazorServerApp/Controllers/CultureController.cs)
 - [Index.razor](./CS/BlazorServerApp/Pages/Index.razor)
 
