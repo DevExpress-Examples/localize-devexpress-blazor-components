@@ -16,12 +16,4 @@
 	<ItemGroup>
 		<BlazorLinkerDescriptor Include="Linker.xml" />
 	</ItemGroup>
-	<ItemGroup>
-	  <EmbeddedResource Update="Resources\Pages\Index.it.resx">
-	    <SubType>Designer</SubType>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resources\Pages\Index.ja.resx">
-	    <SubType>Designer</SubType>
-	  </EmbeddedResource>
-	</ItemGroup>
 </Project>
