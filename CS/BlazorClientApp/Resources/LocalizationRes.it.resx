@@ -258,4 +258,193 @@
   <data name="DxBlazorStringId.Grid_ColumnChooser" xml:space="preserve">
     <value>Selezione Colonne</value>
   </data>
+  <data name="DxBlazorStringId.DateEdit_DateTab" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DxBlazorStringId.DateEdit_NowButton" xml:space="preserve">
+    <value>Adesso</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Resource" xml:space="preserve">
+    <value>Risorse</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_CancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Resources_SelectAll" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_ResourcesButton" xml:space="preserve">
+    <value>Risorse</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Loading" xml:space="preserve">
+    <value>Caricamento...</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_WeekDays_WorkDay" xml:space="preserve">
+    <value>Giornata di lavoro</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_ColumnChooser_CommandColumn" xml:space="preserve">
+    <value>Colonna comando</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_PageSize" xml:space="preserve">
+    <value>Dimensioni della pagina</value>
+  </data>
+  <data name="DxBlazorStringId.Pager_PrevButton" xml:space="preserve">
+    <value>Precedente</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_DeleteButton" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_EditButton" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="DxBlazorStringId.ColorPicker_CancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_CancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="DxBlazorStringId.Popup_CloseButton" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="DxBlazorStringId.ColorPicker_OkButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_NewButton" xml:space="preserve">
+    <value>Nuovo</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_UpdateButton" xml:space="preserve">
+    <value>Aggiornamento</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_EmptyDataRow" xml:space="preserve">
+    <value>Nessun dato da visualizzare</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_AllText" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_ClearButton" xml:space="preserve">
+    <value>Pulisci</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_Loading" xml:space="preserve">
+    <value>Caricamento...</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_MonthViewName" xml:space="preserve">
+    <value>Mese</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_SettingsToolbarTitle" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_SummaryCount" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_ColumnChooser" xml:space="preserve">
+    <value>Selezione Colonne</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_SummaryMax" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_SummaryMin" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_SummarySum" xml:space="preserve">
+    <value>Somma</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_SummaryAvg" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Editing_DeleteButton" xml:space="preserve">
+    <value>Elimina</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Editing_EditButton" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Editing_CancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="DxBlazorStringId.No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Editing_SaveButton" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <data name="DxBlazorStringId.Yes" xml:space="preserve">
+    <value>Si</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Editing_NewButton" xml:space="preserve">
+    <value>Nuovo</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_PageSizeSelector_AllRowsItem" xml:space="preserve">
+    <value>Tutti</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_ClearFilterButton" xml:space="preserve">
+    <value>Pulisci</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_CheckBoxColumn_FilterTextIndeterminate" xml:space="preserve">
+    <value>Indeterminato</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_CheckBoxColumn_FilterTextUnchecked" xml:space="preserve">
+    <value>Falso</value>
+  </data>
+  <data name="DxBlazorStringId.DataGrid_CheckBoxColumn_FilterTextChecked" xml:space="preserve">
+    <value>Vero</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Color_Teal" xml:space="preserve">
+    <value>Teal</value>
+  </data>
+  <data name="DxBlazorStringId.Upload_SelectFileButton" xml:space="preserve">
+    <value>Seleziona file</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Summary_Count" xml:space="preserve">
+    <value>Conteggio</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Summary_Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Summary_Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Summary_Sum" xml:space="preserve">
+    <value>Somma</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_Summary_Average" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_Today" xml:space="preserve">
+    <value>Oggi</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_Tomorrow" xml:space="preserve">
+    <value>Domani</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_Yesterday" xml:space="preserve">
+    <value>Ieri</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_LastWeek" xml:space="preserve">
+    <value>Settimana scorsa</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_NextWeek" xml:space="preserve">
+    <value>La prossima settimana</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_LastMonth" xml:space="preserve">
+    <value>Mese scorso</value>
+  </data>
+  <data name="DxBlazorStringId.Grid_GroupInterval_DateRange_NextMonth" xml:space="preserve">
+    <value>Mese prossimo</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Resources_FilterNullText" xml:space="preserve">
+    <value>Nome della risorsa...</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_Weeks" xml:space="preserve">
+    <value>settimana(e)</value>
+  </data>
+  <data name="DxBlazorStringId.Scheduler_Form_RepeatEnd" xml:space="preserve">
+    <value>Ripeti fine</value>
+  </data>
+  <data name="DxBlazorStringId.Upload_Canceled" xml:space="preserve">
+    <value>Annullata</value>
+  </data>
+  <data name="DxBlazorStringId.Upload_ReadyToUpload" xml:space="preserve">
+    <value>Pronto per il caricamento</value>
+  </data>
 </root>
