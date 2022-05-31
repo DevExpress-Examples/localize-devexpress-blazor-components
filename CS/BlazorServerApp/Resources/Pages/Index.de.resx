@@ -126,9 +126,6 @@
   <data name="Precipitates" xml:space="preserve">
     <value>Niederschläge</value>
   </data>
-  <data name="SelectYourLanguage" xml:space="preserve">
-    <value>Wählen Sie Ihre Sprache</value>
-  </data>
   <data name="Summary" xml:space="preserve">
     <value>Zusammenfassung</value>
   </data>

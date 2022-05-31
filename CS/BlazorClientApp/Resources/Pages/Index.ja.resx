@@ -118,21 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cloudiness" xml:space="preserve">
-    <value>Облачность</value>
+    <value>曇り</value>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Дата</value>
+    <value>日付</value>
   </data>
   <data name="Precipitates" xml:space="preserve">
-    <value>Осадки</value>
-  </data>
-  <data name="SelectYourLanguage" xml:space="preserve">
-    <value>Выберите язык</value>
+    <value>沈殿物</value>
   </data>
   <data name="Summary" xml:space="preserve">
-    <value>Сводка</value>
+    <value>概要</value>
   </data>
   <data name="Temperature" xml:space="preserve">
-    <value>Темп.</value>
+    <value>温度</value>
   </data>
 </root>
