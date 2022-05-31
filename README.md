@@ -28,6 +28,7 @@ Blazor Server
 
 Blazor WebAssembly
 -	[Program.cs](./CS/BlazorClientApp/Program.cs)
+-	[DemoLocalizationService.cs](./CS/BlazorClientApp/Services/DemoLocalizationService.cs)
 -	[Index.razor](./CS/BlazorClientApp/Pages/Index.razor)
 <!-- default file list end -->
 

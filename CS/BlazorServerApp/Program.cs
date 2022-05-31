@@ -15,7 +15,7 @@ namespace BlazorServerApp
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddControllers();
-            builder.Services.AddDevExpressBlazor();
+            builder.Services.AddDevExpressBlazor(opt => opt.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5);
             builder.Services.AddSingleton<WeatherForecastService>();
 
             builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
