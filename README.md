@@ -22,14 +22,14 @@ To obtain satellite assemblies for DevExpress .NET controls that correspond to o
 ## Files to Look At
 
 Blazor Server:
-- [Program.cs](./CS/BlazorServer/Program.cs)
-- [CultureController.cs](./CS/BlazorServer/Controllers/CultureController.cs)
-- [Index.razor](./CS/BlazorServer/Pages/Index.razor)
+- [Program.cs](./CS/DxBlazorLocalization/BlazorServer/Program.cs)
+- [CultureController.cs](./CS/DxBlazorLocalization/BlazorServer/Controllers/CultureController.cs)
+- [Index.razor](./CS/DxBlazorLocalization/BlazorServer/Pages/Index.razor)
 
 Blazor WebAssembly:
-- [Program.cs](./CS/BlazorWebAssembly/Program.cs)
-- [LocalizationService.cs](./CS/BlazorWebAssembly/Services/LocalizationService.cs)
-- [Index.razor](./CS/BlazorWebAssembly/Pages/Index.razor)
+- [Program.cs](./CS/DxBlazorLocalization/BlazorWebAssembly/Program.cs)
+- [LocalizationService.cs](./CS/DxBlazorLocalization/BlazorWebAssembly/Services/LocalizationService.cs)
+- [Index.razor](./CS/DxBlazorLocalization/BlazorWebAssembly/Pages/Index.razor)
 <!-- default file list end -->
 
 ## Documentation
