@@ -15,36 +15,29 @@
         DataItemDeleting="OnDataItemDeleting"
         EditModelSaving="OnEditModelSaving">
     <Columns>
-        <DxGridCommandColumn Width="155px"></DxGridCommandColumn>
-        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Date)" Caption=@L["Date"] DisplayFormat="D"></DxGridDataColumn>
-        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Summary)" Caption=@L["Summary"] Width="150px"></DxGridDataColumn>
-        <DxGridDataColumn FieldName="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L["Temperature"]} (\x2109)") TextAlignment="GridTextAlignment.Left" Width="150px"></DxGridDataColumn>
-        <DxGridDataColumn FieldName="@nameof(WeatherForecast.WeatherType)" Caption=@L["Cloudiness"] TextAlignment="GridTextAlignment.Left" Width="150px"></DxGridDataColumn>
-        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Precipitates)" Caption=@L["Precipitates"] Width="120px">
-            <CellDisplayTemplate>
-                <DxCheckBox CssClass="d-inline-block" Enabled="false" Checked="(bool)context.Value" />
-            </CellDisplayTemplate>
-        </DxGridDataColumn>
+        <DxGridCommandColumn Width="155px" />
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Date)" Caption=@L["Date"] DisplayFormat="D" />
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Summary)" Caption=@L["Summary"] Width="150px" />
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.TemperatureC)" Caption=@($"{L["Temperature"]} (\x2103)") TextAlignment="GridTextAlignment.Left" Width="150px" />
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.WeatherType)" Caption=@L["Cloudiness"] TextAlignment="GridTextAlignment.Left" Width="150px" />
+        <DxGridDataColumn FieldName="@nameof(WeatherForecast.Precipitates)" Caption=@L["Precipitates"] Width="120px" />
     </Columns>
     <EditFormTemplate Context="EditFormContext">
-        @{
-            var forecast = (WeatherForecast)EditFormContext.EditModel;
-        }
         <DxFormLayout>
-            <DxFormLayoutItem Caption=@L["Date"] ColSpanMd="6">
-                <DxDateEdit @bind-Date=@forecast.Date></DxDateEdit>
+            <DxFormLayoutItem Caption=@L["Date"]>
+                @EditFormContext.GetEditor("Date")
             </DxFormLayoutItem>
-            <DxFormLayoutItem Caption=@L["Summary"] ColSpanMd="6">
-                <DxTextBox @bind-Text=@forecast.Summary></DxTextBox>
+            <DxFormLayoutItem Caption=@L["Summary"]>
+                @EditFormContext.GetEditor("Summary")
             </DxFormLayoutItem>
-            <DxFormLayoutItem Caption=@($"{L["Temperature"]} (\x2109)") ColSpanMd="6">
-                <DxSpinEdit @bind-Value=@forecast.TemperatureC></DxSpinEdit>
+            <DxFormLayoutItem Caption=@($"{L["Temperature"]} (\x2103)")>
+                @EditFormContext.GetEditor("TemperatureC")
             </DxFormLayoutItem>
-            <DxFormLayoutItem Caption=@L["Cloudiness"] ColSpanMd="6">
-                <DxComboBox Data=@WeatherTypes @bind-Value=@forecast.WeatherType></DxComboBox>
+            <DxFormLayoutItem Caption=@L["Cloudiness"]>
+                @EditFormContext.GetEditor("WeatherType")
             </DxFormLayoutItem>
-            <DxFormLayoutItem Caption=@L["Precipitates"] ColSpanMd="6">
-                <DxCheckBox @bind-Checked=@forecast.Precipitates></DxCheckBox>
+            <DxFormLayoutItem Caption=@L["Precipitates"]>
+                @EditFormContext.GetEditor("Precipitates")
             </DxFormLayoutItem>
         </DxFormLayout>
     </EditFormTemplate>
