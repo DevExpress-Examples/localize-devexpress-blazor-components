@@ -8,10 +8,10 @@
     <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Blazor" Version="24.2.1-alpha-24207" />
-    <PackageReference Include="DevExpress.Blazor.de" Version="24.2.1-alpha-24207" />
-    <PackageReference Include="DevExpress.Blazor.es" Version="24.2.1-alpha-24207" />
-    <PackageReference Include="DevExpress.Blazor.ja" Version="24.2.1-alpha-24207" />
+    <PackageReference Include="DevExpress.Blazor" Version="25.1.*-*" />
+    <PackageReference Include="DevExpress.Blazor.de" Version="25.1.*-*" />
+    <PackageReference Include="DevExpress.Blazor.es" Version="25.1.*-*" />
+    <PackageReference Include="DevExpress.Blazor.ja" Version="25.1.*-*" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.5" />
