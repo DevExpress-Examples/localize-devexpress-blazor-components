@@ -17,7 +17,7 @@ Our components ship with NuGet packages with predefined satellite assemblies for
 - Spanish (es)
 - Japanese (ja)
 
-To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
+To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](https://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
 
 <!-- default file list -->
 ## Files to Look At
@@ -47,3 +47,4 @@ Blazor WebAssembly:
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
