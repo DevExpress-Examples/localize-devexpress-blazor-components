@@ -13,9 +13,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddDevExpressBlazor();
 builder.Services.AddScoped<WeatherForecastService>();
-builder.Services.Configure<DevExpress.Blazor.Configuration.GlobalOptions>(options => {
-    options.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5;
-});
 builder.Services.AddLocalization();
 builder.Services.AddSingleton(typeof(IDxLocalizationService), typeof(LocalizationService));
 
@@ -27,5 +24,6 @@ if (result != null) {
     CultureInfo.DefaultThreadCurrentCulture = culture;
     CultureInfo.DefaultThreadCurrentUICulture = culture;
 }
+
 
 await app.RunAsync();
