@@ -8,9 +8,6 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddControllers();
 builder.Services.AddDevExpressBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.Configure<DevExpress.Blazor.Configuration.GlobalOptions>(options => {
-    options.BootstrapVersion = DevExpress.Blazor.BootstrapVersion.v5;
-});
 builder.WebHost.UseWebRoot("wwwroot");
 builder.WebHost.UseStaticWebAssets();
 builder.Services.AddLocalization();
@@ -40,5 +37,6 @@ app.UseRequestLocalization(localizationOptions);
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 app.MapControllers();
+
 
 app.Run();
