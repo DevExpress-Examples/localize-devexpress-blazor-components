@@ -14,7 +14,7 @@ Our components ship with NuGet packages with predefined satellite assemblies for
 -	Japanese (ja)
 -	Russian (ru)
 
-To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](http://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
+To obtain satellite assemblies for DevExpress .NET controls that correspond to other cultures, use the [DevExpress Localization Service](https://localization.devexpress.com/). This service allows you to modify the existing translations, compile and download the satellite assemblies.
  
  *Files to look at*:
 
