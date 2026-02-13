@@ -47,7 +47,7 @@ In this example, \*.resx files are converted to dictionaries using [T4 text temp
 [4]: http://docs.devexpress.com/Blazor/DevExpress.Blazor.Localization.IDxLocalizationService.GetString\(System.String\)
 [5]: https://docs.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates?view=vs-2019
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=localize-devexpress-blazor-components&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=localize-devexpress-blazor-components&~~~was_helpful=no)
 
